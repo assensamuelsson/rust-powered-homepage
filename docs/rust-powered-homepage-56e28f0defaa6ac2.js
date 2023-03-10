@@ -623,7 +623,7 @@ function initSync(module) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('rust-powered-homepage-677e4c4f43f7301e_bg.wasm', import.meta.url);
+        input = new URL('rust-powered-homepage-56e28f0defaa6ac2_bg.wasm', import.meta.url);
     }
     const imports = getImports();
 
