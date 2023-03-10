@@ -1,1 +1,3 @@
 # rust-powered-homepage
+
+foo
