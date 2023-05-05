@@ -50,6 +50,10 @@ h2 {
   margin-top: 20px;
 }
 
+article {
+  margin: 0 16px;
+}
+
 .published {
   margin-top: 6px;
   font-size: 0.8rem;
@@ -144,7 +148,7 @@ nav {
 }
 
 .horizontal-clamp {
-  margin: 0 16px;
+  margin: 0;
   max-width: 768px;
 }
 

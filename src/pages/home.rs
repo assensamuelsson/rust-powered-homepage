@@ -8,5 +8,9 @@ pub fn home() -> Html {
         "You will find that this page is rather empty at the moment, but I will try to add content as time goes by. For the time being you can check out my blog.",
     ];
 
-    parapgraphs.iter().map(|p| html! { <p>{ p }</p> }).collect::<Html>()
+    html! {
+        <article>
+            { parapgraphs.iter().map(|p| html! { <p>{ p }</p> }).collect::<Html>() }
+        </article>
+    }
 }

@@ -7,14 +7,14 @@ mod blog_posts;
 
 #[derive(Clone, Routable, PartialEq)]
 enum Route {
-    #[at("/rust-powered-homepage/")]
+    #[at("/")]
     Home,
-    #[at("/rust-powered-homepage/blog")]
+    #[at("/blog")]
     Blog,
-    #[at("/rust-powered-homepage/gallery")]
+    #[at("/gallery")]
     Gallery,
     #[not_found]
-    #[at("/rust-powered-homepage/404")]
+    #[at("/404")]
     NotFound
 }
 
