@@ -6,14 +6,14 @@ mod pages;
 
 #[derive(Clone, Routable, PartialEq)]
 enum Route {
-    #[at("/")]
+    #[at("/rust-powered-homepage/")]
     Home,
-    #[at("/blog")]
+    #[at("/rust-powered-homepage/blog")]
     Blog,
-    #[at("/gallery")]
+    #[at("/rust-powered-homepage/gallery")]
     Gallery,
     #[not_found]
-    #[at("/404")]
+    #[at("/rust-powered-homepage/404")]
     NotFound
 }
 
