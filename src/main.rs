@@ -34,12 +34,10 @@ fn switch(route: Route) -> Html {
 #[function_component(App)]
 pub fn app() -> Html {
     html! {
-        <>
+        <HashRouter>
             <crate::components::nav::NavBar />
-            <BrowserRouter>
-                <Switch<Route> render={switch} />
-            </BrowserRouter>
-        </>
+            <Switch<Route> render={switch} />
+        </HashRouter>
     }
 }
 

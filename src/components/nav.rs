@@ -27,8 +27,8 @@ pub fn nav_bar() -> Html {
                 <nav>
                     <ul class="menu">
                         <li><NavItem href="/" text="Home" /></li>
-                        <li><NavItem href="/blog" text="Blog" /></li>
-                        <li><NavItem href="/gallery" text="Gallery" /></li>
+                        <li><NavItem href="#/blog" text="Blog" /></li>
+                        <li><NavItem href="#/gallery" text="Gallery" /></li>
                     </ul>
                 </nav>
             </div>
