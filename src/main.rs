@@ -1,9 +1,44 @@
 use yew::prelude::*;
+use yew_router::prelude::*;
+
+mod components;
+mod pages;
+
+#[derive(Clone, Routable, PartialEq)]
+enum Route {
+    #[at("/")]
+    Home,
+    #[at("/blog")]
+    Blog,
+    #[at("/gallery")]
+    Gallery,
+    #[not_found]
+    #[at("/404")]
+    NotFound
+}
+
+fn switch(route: Route) -> Html {
+    let page = match route {
+        Route::Home => html! { <crate::pages::home::Home /> },
+        Route::Blog => html! { "blog" },
+        Route::Gallery => html! { "gallery" },
+        Route::NotFound => html! { "404" },
+    };
+
+    html! {
+        <crate::pages::PageWrapper page={page} />
+    }
+}
 
 #[function_component(App)]
-fn app() -> Html {
+pub fn app() -> Html {
     html! {
-        <h1>{ "Hello World from Github Pages with pre commit hook v2" }</h1>
+        <>
+            <crate::components::nav::NavBar />
+            <BrowserRouter>
+                <Switch<Route> render={switch} />
+            </BrowserRouter>
+        </>
     }
 }
 
