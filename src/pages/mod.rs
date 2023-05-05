@@ -1,6 +1,7 @@
 use yew::prelude::*;
 
 pub mod home;
+pub mod blog;
 
 #[derive(Properties, PartialEq)]
 pub struct PageWrapperProps {

@@ -3,6 +3,7 @@ use yew_router::prelude::*;
 
 mod components;
 mod pages;
+mod blog_posts;
 
 #[derive(Clone, Routable, PartialEq)]
 enum Route {
@@ -20,8 +21,8 @@ enum Route {
 fn switch(route: Route) -> Html {
     let page = match route {
         Route::Home => html! { <crate::pages::home::Home /> },
-        Route::Blog => html! { "blog" },
-        Route::Gallery => html! { "gallery" },
+        Route::Blog => html! { <crate::pages::blog::Blog /> },
+        Route::Gallery => html! { "Nothing here yet :(" },
         Route::NotFound => html! { "404" },
     };
 

@@ -26,9 +26,9 @@ pub fn nav_bar() -> Html {
                 <label class="hamburger" for="side-menu"><span class="hamburger-line"/></label>
                 <nav>
                     <ul class="menu">
-                        <li><NavItem href="/" text="Home" /></li>
-                        <li><NavItem href="/blog" text="Blog" /></li>
-                        <li><NavItem href="/gallery" text="Gallery" /></li>
+                        <li><NavItem href="/rust-powered-homepage" text="Home" /></li>
+                        <li><NavItem href="/rust-powered-homepage/blog" text="Blog" /></li>
+                        <li><NavItem href="/rust-powered-homepage/gallery" text="Gallery" /></li>
                     </ul>
                 </nav>
             </div>
