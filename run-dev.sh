@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-trunk serve --open
+trunk serve --open --public-url=rust-powered-homepage/

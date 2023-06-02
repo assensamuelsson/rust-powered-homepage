@@ -21,12 +21,12 @@ pub fn nav_bar() -> Html {
     html! {
         <header>
             <div class="horizontal-clamp">
-                <a href="/"><Logo /></a>
+                <a href="#/"><Logo /></a>
                 <input class="side-menu" type="checkbox" id="side-menu" />
                 <label class="hamburger" for="side-menu"><span class="hamburger-line"/></label>
                 <nav>
                     <ul class="menu">
-                        <li><NavItem href="/" text="Home" /></li>
+                        <li><NavItem href="#/" text="Home" /></li>
                         <li><NavItem href="#/blog" text="Blog" /></li>
                         <li><NavItem href="#/gallery" text="Gallery" /></li>
                     </ul>
