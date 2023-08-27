@@ -2,7 +2,7 @@ use yew::prelude::*;
 use crate::components::blog_post::BlogPostProps;
 use chrono::NaiveDate;
 
-pub fn test_as_examples() -> BlogPostProps {
+pub fn tests_as_examples() -> BlogPostProps {
     let title = String::from("Treat your tests as code examples for your app");
     let published = NaiveDate::from_ymd_opt(2023, 5, 5).unwrap();
     let content = html! {
@@ -33,7 +33,7 @@ pub fn test_as_examples() -> BlogPostProps {
             <p> {
                 "If you treat your tests as a necessary evil to test what really matters, the production code, then yeah - they probably are a mess.
                 However, have you considered that your tests might be more important than your production code?
-                Noy only are they veryfing that your app is working as intended, they can also be a great source of documentation."
+                Not only are they veryfing that your app is working as intended, they can also be a great source of documentation."
             } </p>
             <q> {
                 "Ok... Show how should I write my tests then?"
